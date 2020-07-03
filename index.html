@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thiessen Polygon</title>
+		
+		<script src="elements/graph-plot.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+		<graph-plot id='plot'></graph-plot>
+		
+		<div id='menu'>
+			<button id='prevMode'>&#x25c0;</button>
+
+			<select id="mode">
+				<option value="points">Points</option>
+				<option value="triangles, points">Triangles</option>
+				<option value="lines, triangles, points">Lines</option>
+				<option value="polygons, points">Polygons</option>
+				<option value="polygons, triangles, points">All</option>
+			</select>
+
+			<button id='nextMode'>&#x25b6;</button>
+			
+			&nbsp;
+
+			<button id='reset'>&#x21ba;</button>
+			<!--button id='run'>&#9654;</button-->
+		<div>
+	</body>
+
+	<script src="https://unpkg.com/delaunator@4.0.1/delaunator.min.js"></script>
+	<script src="geometryUtils.js"></script>
+	<script src="script.js"></script>
+</html>
